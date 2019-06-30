@@ -1,0 +1,479 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #dfe2e6;
+  color: #878787;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+a {
+  color: #434b50;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+p {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1.8em;
+}
+
+
+/* =================================
+  Navigation
+==================================== */
+
+
+.name {
+  font-size: 2.2em;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.main-nav {
+  margin-top: 5px;
+}
+
+
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+
+.main-nav a {
+  font-size: 1.2em;
+  /*font-weight: bold;*/
+  color: #434b50;
+  text-transform: uppercase;
+  background: white;
+  margin-top: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.main-nav a:hover {
+  color: #8d969c;
+}
+
+
+/* =================================
+  Footer Layout Styles
+==================================== */
+
+
+.main-footer {
+  background-color: #dfe2e6; 
+}
+
+
+.student_name {
+  display: inline-block;
+  float: left;
+}
+
+
+.back_to_top {
+  display: inline-block;
+  float: right;
+}
+
+
+.main-footer {
+  margin: 0px 20px 0px 20px;
+  border: 1px dashed #dfe2e6;
+  border-top: 1px solid grey; 
+}
+
+
+.footer_nav {
+  display: none;
+}
+
+
+/* =================================
+   Float Clearfix
+==================================== */
+
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+/* =================================
+  Layout Containers
+==================================== */
+
+
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+
+/* =================================
+  Page Elements
+==================================== */
+
+
+
+.photo {
+  width: 60%;
+  margin-top: 60px;
+}
+
+
+.banner {
+  padding: 10px 10px;
+}
+
+.portfolio {
+  background-color: white;
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+
+.title {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+/* =================================
+  Class Selector
+==================================== */
+
+
+
+.main-header,
+.banner,
+.contact {
+  background: #dfe2e6;
+}
+
+
+.email,
+.phone {
+  margin-bottom: 0;
+}
+
+
+.email {
+  margin-top: 0;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+
+
+  body {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /*---------HEADER-----------*/
+
+  .name {
+    font-size: 1.6em;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .main-nav {
+    display: block;
+    margin: 0px;
+    padding-top: 15px;  
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .main-nav a {
+    font-size: 1em;
+    font-weight: normal;
+    color: #434b50;
+    text-transform: uppercase;
+    background: #dfe2e6;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  /*---------BANNER-----------*/
+
+  .banner {
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .photo {
+    float: right;
+    width: 40%;
+    margin-top: 0px;
+    padding: 20px 20px;
+  }
+
+  .intro {
+    font-size: 1.2em;
+    float: left;
+    width: 60%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px 10px;
+    text-align: justify;
+  }
+
+  /*---------PORTFOLIO-----------*/
+
+  .portfolio {
+    background: white;
+    display: inline-block;
+    padding: 10px 10px;
+  }
+  
+  
+  .col {
+    float: left;
+  }
+  
+
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth,
+  .sixth {
+    width: 50%;
+  }
+
+  /*---------FOOTER-----------*/
+
+
+
+  .back_to_top {
+    display: none;
+  }
+
+
+  .student_name {
+    display: inline-block;
+    float: left;
+  }
+
+
+
+  .footer_nav {
+    display: inline-block;
+    float: right;
+  }
+
+  .footer_nav li {
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+
+  /* ---- Float clearfix ---- */
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+}
+
+
+
+@media (min-width: 1025px) {
+
+
+  body {
+    width: 80%;
+    max-width: 1150px;
+  }
+
+  /*---------HEADER-----------*/
+
+  .name {
+    font-size: 1.6em;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    float: left;
+  }
+
+  .main-nav {
+    display: inline-block;
+    float: right;
+    margin: 0px;
+    padding-top: 40px;  
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .main-nav a {
+    font-size: 1em;
+    font-weight: normal;
+    color: #434b50;
+    text-transform: uppercase;
+    background: #dfe2e6;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  /*---------BANNER-----------*/
+
+  .banner {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .photo {
+    float: right;
+    width: 40%;
+    margin-top: 0px;
+    padding: 20px 20px;
+  }
+
+  .intro {
+    font-size: 1.2em;
+    float: left;
+    width: 60%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px 10px;
+    text-align: justify;
+  }
+
+  /*---------PORTFOLIO-----------*/
+
+  .portfolio {
+    background: white;
+    display: inline-block;
+    padding: 10px 10px;
+  }
+  
+  
+  .col {
+    float: left;
+  }
+  
+
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth,
+  .sixth {
+    width: 33%;
+  }
+
+  /*---------FOOTER-----------*/
+
+
+
+  .back_to_top {
+    display: none;
+  }
+
+
+  .student_name {
+    display: inline-block;
+    float: left;
+  }
+
+
+
+  .footer_nav {
+    display: inline-block;
+    float: right;
+  }
+
+  .footer_nav li {
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+
+  /* ---- Float clearfix ---- */
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+}
+
+
+
+
+
+
+
+
+
